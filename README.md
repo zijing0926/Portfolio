@@ -52,7 +52,8 @@ Using PySpark DataFrame, this project:
 
 # [Star Rating Predictions with Machine Learning Models](https://github.com/zijing0926/Star-Rating-Predictions-with-Machine-Learning-Models)
 * Utilized Yelp dataset to predict the star rating of new venues based on location, categories and attributes.
-* Built customized column selector, categorical variable encoder, linear estimator with residuals fitting non-linear estimator. The full model reaches **95% accuracy** in test set.
+* Built customized column selector, categorical variable encoder, linear estimator with residuals fitting non-linear estimator. 
+* Built machine learning pipelines and constructed a full model combining three pipelines as a feature union. The full model reaches **95% accuracy** in test set.
 
 # [Analyzing-restaurant-inspection-data-using-sqlite](https://github.com/zijing0926/Analyzing-restaurant-inspection-data-using-sqlite)
 This project utilized sqlite to clean and join four different datasets to conduct extensive analysis on New York restaurants’ health and safety scores and violations. Specifically, this project:
@@ -61,4 +62,12 @@ This project utilized sqlite to clean and join four different datasets to conduc
 * checked the average inspection score by different borough in New York.
 * examined the violations by different cuisine to find out which cuisines tend to have a disproportionate number of what kind of violation. The right quantity to look at is the conditional probability of a specific type of violation given a specific cuisine type and divide it by the unconditional probability of the violation for the entire population.
 
+![](/images/carto.PNG)
+![](/images/violation.PNG)
+
+# [Text-Analysis-on-Yelp-Reviews](https://github.com/zijing0926/Text-Analysis-on-Yelp-Reviews)
+This project used NLP and machine learning models to predict Yelp star ratings based on text reviews:
+* used Hash Vectorizer and TFIDF Vectorizer including bigrams as the transformer, and used Ridge regression.
+* used GridSearchCV to find the best parameters for both the transformer and the estimator. 
+* utilized the Counter Vectorizer to find the 100 most common food bigrams, by calculating p(w_1w_2)/p(w_1) * p(w_2)
 
