@@ -29,6 +29,11 @@ First HSR in 2008          |  HSR Network in 2018
 * Built New York Elite social network using Networkx with the assumption that people in the same picture know each other. 
 * Utilized the New York elite social network to find the most popular socialites, most influential people and the most tightly coupled pairs.
 
+Most Influential(Degrees)  | Most Influential (PageRank)| Most tightly coupled
+:-------------------------:|:-------------------------: |:-------------------------:
+![](/images/degree.png)    |![](/images/pr.png)         |![](/images/friends.png)
+
+
 # [Distributed Computation: Using Pyspark to Analyze Stack Overflow Posts](https://github.com/zijing0926/Spark)
 For a dataset as large as 10GB with stack overflow posts, using RDD, this project:
 * filtered out the bad XMLs;
@@ -44,4 +49,16 @@ Using PySpark DataFrame, this project:
 * removed stopwords, tokenized the texts, used HashingTF as the transformer and logistic regression as the estimator; used cross validation to tune hyper parameters.
 
 <img width="400" height="600" src="images/word2vec.PNG">
+
+# [Star Rating Predictions with Machine Learning Models](https://github.com/zijing0926/Star-Rating-Predictions-with-Machine-Learning-Models)
+* Utilized Yelp dataset to predict the star rating of new venues based on location, categories and attributes.
+* Built customized column selector, categorical variable encoder, linear estimator with residuals fitting non-linear estimator. The full model reaches **95% accuracy** in test set.
+
+# [Analyzing-restaurant-inspection-data-using-sqlite](https://github.com/zijing0926/Analyzing-restaurant-inspection-data-using-sqlite)
+This project utilized sqlite to clean and join four different datasets to conduct extensive analysis on New York restaurants’ health and safety scores and violations. Specifically, this project:
+* removed the null entries grouping by restaurant and inspection date.
+* checked the average inspection score for the most recent inspection by zipcode by merging datasets with certain conditions, and map it on [Carto](https://zzhu0926.carto.com/builder/4e424589-44ec-4d28-85c6-53bf0f418476).
+* checked the average inspection score by different borough in New York.
+* examined the violations by different cuisine to find out which cuisines tend to have a disproportionate number of what kind of violation. The right quantity to look at is the conditional probability of a specific type of violation given a specific cuisine type and divide it by the unconditional probability of the violation for the entire population.
+
 
