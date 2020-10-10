@@ -1,8 +1,9 @@
 # Portfolio
 Zijing's data science project portfolio
 
-[Resume](https://www.dropbox.com/s/fqxj8abfb089zen/Zijing%20Zhu%20Resume.pdf?dl=0)| [LinkedIn](https://www.linkedin.com/in/zijingzhu/)|[Medium](https://medium.com/@zzhu17)
-:-------------------------:|:-------------------------:|:-------------------------:
+* [Resume](https://www.dropbox.com/s/fqxj8abfb089zen/Zijing%20Zhu%20Resume.pdf?dl=0)
+* [LinkedIn](https://www.linkedin.com/in/zijingzhu/)
+* [Medium](https://medium.com/@zzhu17)
 
 # [News Sentiment and Topic Analysis on WTI Crude Oil Future Prices](https://github.com/zijing0926/News-Sentiment-and-Topic-Analysis)
 * **Web scraped** over 6000 crude-oil related news articles using URLs downloaded from Bloomberg
