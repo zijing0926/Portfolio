@@ -81,7 +81,18 @@ This project used **NLP** and machine learning models to predict Yelp star ratin
 
 # [Time Series Analysis: Predicting Temperature in Different Cities](https://github.com/zijing0926/Time-Series-Analysis-Predicting-Temperature)
 This project read historical temperature for each city from a txt file, and used two models to predict the temperature using time series techniques:
-* first, I built a group-by estimator that takes an **estimator factory**. The estimator factory is a collection of estimators for each city. In this case, each city's estimator is only fitting into its own data and make corresponding predictions. The first model simply uses the random forest models to predict each city's temperature. 
-* for the second model, I used is a **Fourier model** that captures the seasonal features. Using month and hour, the group estimator is making better predictions for each city.
+* built a group-by estimator that takes an **estimator factory**. The estimator factory is a collection of estimators for each city. In this case, each city's estimator is only fitting into its own data and make corresponding predictions. The first model simply uses the random forest models to predict each city's temperature. 
+* used is a **Fourier model** that captures the seasonal features. Using month and hour, the group estimator is making better predictions for each city.
+
+# [Web Scraping Demo: Using Yelp as an example](https://github.com/zijing0926/Web-Scraping)
+I taught graduate student how to web scrape using Yelp as an example:
+* demostrated the use of web scraping on how to get information from the source page
+* wrote funtions to scrape different information
+
+![](/images/yelp.PNG)
+
+
+
+
 
 
