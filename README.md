@@ -22,7 +22,7 @@ First HSR in 2008          |  HSR Network in 2018
 :-------------------------:|:-------------------------:
 <img width="300" height="300" src="images/hsr_2008.png"> | <img width="300" height="300" src="images/hsr_2018.png">
 
-<img width="600" height="400" src="images/image.png">
+![](/images/image.png)
 
 # [New York Elite Social Network](https://github.com/zijing0926/New-York-Social-Graph)
 * **Web scraped** over 100,000 photo captions from [New York Social Diary](https://web.archive.org/web/20150913112557/http://www.newyorksocialdiary.com/) and extracted names using **Regex** and **spaCy**. 
