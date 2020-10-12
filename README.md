@@ -9,7 +9,7 @@ Zijing's data science project portfolio
 * **Web scraped** over 6000 crude-oil related news articles using URLs downloaded from Bloomberg
 * Applied **text mining** algorithms to [preprocess news articles](https://towardsdatascience.com/a-step-by-step-tutorial-for-conducting-sentiment-analysis-a7190a444366)
 * [Transformed cleaned text data with TFIDF Vectorizer](https://towardsdatascience.com/a-step-by-step-tutorial-for-conducting-sentiment-analysis-9d1a054818b6), [utilized Logistic Regression](https://towardsdatascience.com/a-step-by-step-tutorial-for-conducting-sentiment-analysis-cf3e995e3171), LDA, and K-means to conduct sentiment and topic analysis
-* Deployed the trained and evaluated machine learning model at [Heroku](https://news-analysis-crude-oil.herokuapp.com/)
+* Deployed the trained and evaluated machine learning model at [Heroku](https://news-analysis-crude-oil.herokuapp.com/) as a **web app**
 * [Academic paper describing the project in detail](https://www.dropbox.com/s/drj3y7quabgg7r7/news_analysis.pdf?dl=0)
 
 Positive Words             | Negative words
@@ -17,7 +17,7 @@ Positive Words             | Negative words
 <img width="300" height="300" src="images/w3.png"> | <img width="300" height="300" src="images/w4.png">
 
 # [High-Speed Railway(HSR) Network Growth and Labor Reallocation](https://github.com/zijing0926/Chinese-High-Speed-Railway)
-* Conducting **casual inference** between employment and transportation cost across cities and industries using fixed effect panel regression with R
+* Conducting **casual inference** between employment and transportation cost across cities and industries using **fixed effect panel regression** with R
 * Constructed an **instrument variable** conducting spatial analysis with angular coordinates to compute geographic distances among over 200 cities
 * Created graphs with **Matplotlib** and **Seaborn** for data visualization, and designed geographic maps with **GeoPython**.
 * [Academic paper describing the project in detail](https://www.dropbox.com/s/7i95i4u2enn5kz6/Chapter2_HSR.pdf?dl=0)
@@ -39,7 +39,7 @@ Most Influential(Degrees)  | Most Influential (PageRank)| Most tightly coupled
 
 
 # [Distributed Computation: Using Pyspark to Analyze Stack Overflow Posts](https://github.com/zijing0926/Spark)
-For a dataset as large as 10GB with stack overflow posts, using **RDD**, this project:
+For a dataset as large as **10GB** with stack overflow posts, using **RDD**, **MapReduce**, this project:
 * filtered out the bad XMLs;
 * aggregated posts by the number of favorite counts, and finds the average score for each number of favorites;
 * for 99 users with the highest reputation, calculated these users answer percentage by calculating answers/(answers+questions), and the average answer percentage for all users;
@@ -59,17 +59,17 @@ Using **PySpark DataFrame**, this project:
 * Built machine learning pipelines and constructed a full model combining three pipelines as a **feature union**. The full model reaches **95% accuracy** in the test set.
 
 # [Analyzing restaurant inspection data using SQLite](https://github.com/zijing0926/Analyzing-restaurant-inspection-data-using-sqlite)
-This project utilized SQLite to clean and join four different datasets to conduct extensive analysis on New York restaurants' health and safety scores and violations. Specifically, this project:
+This project utilized SQLite to clean and join **four** different datasets to conduct extensive analysis on New York restaurants' health and safety scores, violations. Specifically, this project:
 * removed the null entries grouping by restaurant and inspection date.
 * checked the average inspection score for the most recent inspection by zipcode by merging datasets with certain conditions, and map it on [Carto](https://zzhu0926.carto.com/builder/4e424589-44ec-4d28-85c6-53bf0f418476).
-* checked the average inspection score by different boroughs in New York.
+* calculated the average inspection score by different boroughs in New York.
 * examined the violations by diverse cuisines to determine which cuisines tend to have a disproportionate number of what kind of violation. The right quantity to look at is the conditional probability of a specific type of violation given a particular type of cuisine. It is divided by the unconditional probability of the entire population's violation.
 
 ![](/images/carto.PNG)
 ![](/images/violation.PNG)
 
 # [Image Classification with TensorFlow and Deep Learning Neutral Networks](https://github.com/zijing0926/Image-Classification-with-TensorFlow-and-Deep-Learning)
-This project uses **TensorFlow** and **deep learning models** to train and classify over 100,000 images into ten classes. Throughout the project, different models are presented to make better predictions step by step:
+This project uses **TensorFlow** and **Deep Learning models** to train and classify over 100,000 images into ten classes. Throughout the project, different models are presented to make better predictions step by step:
 * treated image inputs as tensors and defined a delta function calculating the difference between the RGB components, and classify the image to the class with the smallest RGB difference;
 * generated a typical image that minimizes the RGB difference to all training images for each class using gradient descent, and only compared images in the test set to typical images for each class;
 * customized a **logistic regression model** to make multi-class classifications using softmax model;
@@ -91,7 +91,7 @@ This project read historical temperature for each city from a txt file, and used
 # [Web Scraping Demo: Using Yelp as an example](https://github.com/zijing0926/Web-Scraping)
 I taught graduate students how to web scrape using Yelp as an example:
 * demonstrated the use of web scraping on how to get information from the source page
-* wrote functions to scrape different information
+* wrote functions to scrape different information neatly
 
 ![](/images/yelp.PNG)
 
