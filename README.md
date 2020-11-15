@@ -14,7 +14,7 @@ Zijing's data science project portfolio
 
 Positive Words             | Negative words
 :-------------------------:|:-------------------------:
-<img width="300" height="300" src="images/w3.png"> | <img width="300" height="300" src="images/w4.png">
+<img src="images/w3.png"> | <img src="images/w4.png">
 
 # [High-Speed Railway(HSR) Network Growth and Labor Reallocation](https://github.com/zijing0926/Chinese-High-Speed-Railway)
 * Conducting **casual inference** between employment and transportation cost across cities and industries using **fixed effect panel regression** with R
@@ -24,7 +24,7 @@ Positive Words             | Negative words
 
 First HSR in 2008          |  HSR Network in 2018
 :-------------------------:|:-------------------------:
-<img width="300" height="300" src="images/hsr_2008.png"> | <img width="300" height="300" src="images/hsr_2018.png">
+<img src="images/hsr_2008.png"> | <img src="images/hsr_2018.png">
 
 ![](/images/image.png)
 
