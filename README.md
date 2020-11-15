@@ -95,33 +95,38 @@ I taught graduate students how to web scrape using Yelp as an example:
 
 ![](/images/yelp.PNG)
 
-# [Tweets Analysis and Visualization with Twint and Pandas](https://github.com/zijing0926/Tweets-Analysis-with-Twint-and-Pandas)
-* **Web scraped** over 150000 related tweets from Twitter using Twint to analyze a Japanese TV Show's popularity
-* Using Pandas to generate visualizations that tells the stories:
+# [Tweets Analysis and Visualizations with Twint and Pandas](https://github.com/zijing0926/Tweets-Analysis-with-Twint-and-Pandas)
+* **Web scraped** over 150000 related tweets from Twitter using **Twint** to analyze a Japanese TV Show's popularity
+* Using **Pandas** to generate visualizations that tell the stories behind:
 
-1, There is an increasing trend in related tweets and users' actions towards the tweets
-
-2, The increasing trend in tweets comes from the increasing number of unique users posting about the show, as well as the increasing number of posts from each user
-
-3, Users post about the show when the show is on air
-
-4, The show is most popular in Thailand other than Japan
-
-* [Blog posts with technical details](https://medium.com/towards-artificial-intelligence/getting-valuable-insights-and-visualizations-from-tweets-using-python-and-twint-28d9f9eb9128)
+1, There are increasing trends in related tweets and users' actions towards the tweets
 
 Tweets by Date             | Tweets Actions by Date
 :-------------------------:|:-------------------------: 
 ![](/images/tweet_eps6.png)    |![](/images/tweets_actions_eps6.jpeg)  
 
 
+2, The increasing trend in tweets comes from the increasing number of unique users posting about the show, as well as the increasing number of posts from each user
+
 Unique Users by Date       | Average User Posts by Date
 :-------------------------:|:-------------------------: 
 ![](/images/users_eps6.jpeg)    |![](/images/users_posts_eps6.jpeg) 
+
+3, Users post about the show when the show is on air
+
+4, The show is most popular in Thailand other than Japan
 
 
 Tweets by Hour             | Tweets Languages Share
 :-------------------------:|:-------------------------: 
 ![](/images/hour.png)    |![](/images/lan_share.png) 
+
+* [Blog posts with technical details](https://medium.com/towards-artificial-intelligence/getting-valuable-insights-and-visualizations-from-tweets-using-python-and-twint-28d9f9eb9128)
+
+
+
+
+
 
 
 
