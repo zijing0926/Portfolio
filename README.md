@@ -95,8 +95,19 @@ I taught graduate students how to web scrape using Yelp as an example:
 
 ![](/images/yelp.PNG)
 
+# [Tweets Analysis and Visualization with Twint and Pandas](https://github.com/zijing0926/Tweets-Analysis-with-Twint-and-Pandas)
+* **Web scraped** over 150000 related tweets from Twitter using Twint to analyze a Japanese TV Show's popularity
+* Using Pandas to generate visualizations that tells the stories behind
+* [Blog posts with technical details](https://medium.com/towards-artificial-intelligence/getting-valuable-insights-and-visualizations-from-tweets-using-python-and-twint-28d9f9eb9128)
+
+Tweets by Date             | Tweets Actions by Date
+:-------------------------:|:-------------------------: 
+![](/images/tweet_eps6.png)    |![](/images/tweets_actions_eps6.jpeg)  
 
 
+Tweets by Hour             | Tweets Languages Share
+:-------------------------:|:-------------------------: 
+![](/images/hour.png)    |![](/images/lan_share.png) 
 
 
 
