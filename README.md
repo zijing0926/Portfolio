@@ -99,7 +99,7 @@ I taught graduate students how to web scrape using Yelp as an example:
 * **Web scraped** over 150000 related tweets from Twitter using **Twint** to analyze a Japanese TV Show's popularity
 * Using **Pandas** to generate visualizations that tell the stories behind:
 
-1, There are increasing trends in related tweets and users' actions towards the tweets
+1, There are increasing trends in related tweets and users' actions towards the tweets, seasoned around the show releasing date
 
 Tweets by Date             | Tweets Actions by Date
 :-------------------------:|:-------------------------: 
