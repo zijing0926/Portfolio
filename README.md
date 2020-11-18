@@ -28,15 +28,15 @@ First HSR in 2008          |  HSR Network in 2018
 
 ![](/images/image.png)
 
-# [New York Elite Social Network](https://github.com/zijing0926/New-York-Social-Graph)
-* **Web scraped** over 100,000 photo captions from [New York Social Diary](https://web.archive.org/web/20150913112557/http://www.newyorksocialdiary.com/) and extracted names using **Regex** and **spaCy**. 
-* Built New York Elite social network using **Networkx** with the assumption that people in the same picture know each other. 
-* Utilized the New York elite social network to find the most famous socialites, most influential people, and the most tightly coupled pairs.
+# [Analyzing restaurant inspection data using SQLite](https://github.com/zijing0926/Analyzing-restaurant-inspection-data-using-sqlite)
+This project utilized SQLite to clean and join **four** different datasets to conduct extensive analysis on New York restaurants' health and safety scores, violations. Specifically, this project:
+* removed the null entries grouping by restaurant and inspection date.
+* checked the average inspection score for the most recent inspection by zipcode by merging datasets with certain conditions, and map it on [Carto](https://zzhu0926.carto.com/builder/4e424589-44ec-4d28-85c6-53bf0f418476).
+* calculated the average inspection score by different boroughs in New York.
+* examined the violations by diverse cuisines to determine which cuisines tend to have a disproportionate number of what kind of violation. The right quantity to look at is the conditional probability of a specific type of violation given a particular type of cuisine. It is divided by the unconditional probability of the entire population's violation.
 
-Most Influential(Degrees)  | Most Influential (PageRank)| Most tightly coupled
-:-------------------------:|:-------------------------: |:-------------------------:
-![](/images/degree.png)    |![](/images/pr.png)         |![](/images/friends.png)
-
+![](/images/carto.PNG)
+![](/images/violation.PNG)
 
 # [Distributed Computation: Using Pyspark to Analyze Stack Overflow Posts](https://github.com/zijing0926/Spark)
 For a dataset as large as **10GB** with stack overflow posts, using **RDD**, **MapReduce**, this project:
@@ -57,43 +57,6 @@ Using **PySpark DataFrame**, this project:
 * Utilized Yelp dataset to predict the star rating of new venues based on location, categories, and attributes.
 * Built **customized** column selector, categorical variable encoder, a linear estimator with residuals fitting non-linear estimator. 
 * Built machine learning pipelines and constructed a full model combining three pipelines as a **feature union**. The full model reaches **95% accuracy** in the test set.
-
-# [Analyzing restaurant inspection data using SQLite](https://github.com/zijing0926/Analyzing-restaurant-inspection-data-using-sqlite)
-This project utilized SQLite to clean and join **four** different datasets to conduct extensive analysis on New York restaurants' health and safety scores, violations. Specifically, this project:
-* removed the null entries grouping by restaurant and inspection date.
-* checked the average inspection score for the most recent inspection by zipcode by merging datasets with certain conditions, and map it on [Carto](https://zzhu0926.carto.com/builder/4e424589-44ec-4d28-85c6-53bf0f418476).
-* calculated the average inspection score by different boroughs in New York.
-* examined the violations by diverse cuisines to determine which cuisines tend to have a disproportionate number of what kind of violation. The right quantity to look at is the conditional probability of a specific type of violation given a particular type of cuisine. It is divided by the unconditional probability of the entire population's violation.
-
-![](/images/carto.PNG)
-![](/images/violation.PNG)
-
-# [Image Classification with TensorFlow and Deep Learning Neutral Networks](https://github.com/zijing0926/Image-Classification-with-TensorFlow-and-Deep-Learning)
-This project uses **TensorFlow** and **Deep Learning models** to train and classify over 100,000 images into ten classes. Throughout the project, different models are presented to make better predictions step by step:
-* treated image inputs as tensors and defined a delta function calculating the difference between the RGB components, and classify the image to the class with the smallest RGB difference;
-* generated a typical image that minimizes the RGB difference to all training images for each class using gradient descent, and only compared images in the test set to typical images for each class;
-* customized a **logistic regression model** to make multi-class classifications using softmax model;
-* built a multi-layer **fully-connected neural network** that takes the pixel values as input and yields a class prediction as output;
-* built a neural network with two **convolutional layers**, two fully-connected layers with AdamOptimizer;
-* loaded a pre-trained **interception network model**, transformed all train and test images into latent vectors, and made predictions a fully-connected neural network model based on the latent vectors.
-
-# [Text Analysis on Yelp Reviews](https://github.com/zijing0926/Text-Analysis-on-Yelp-Reviews)
-This project used **NLP** and machine learning models to predict Yelp star ratings based on text reviews:
-* used **Hash Vectorizer** and **TFIDF Vectorizer** including bigrams as the transformer, and used Ridge regression.
-* used **GridSearchCV** to find the best parameters for both the transformer and the estimator. 
-* utilized the Counter Vectorizer to find the 100 most common food bigrams, by calculating p(w_1w_2)/p(w_1) * p(w_2)
-
-# [Time Series Analysis: Predicting Temperature in Different Cities](https://github.com/zijing0926/Time-Series-Analysis-Predicting-Temperature)
-This project read historical temperature for each city from a txt file, and used two models to predict the temperature using **time series** techniques:
-* built a group-by estimator that takes an **estimator factory**. The estimator factory is a collection of estimators for each city. In this case, each city's estimator is only fitting into its data and make corresponding predictions. The first model uses **Random Forest** models to predict each city's temperature. 
-* used is a **Fourier model** that captures the seasonal features. Using month and hour, the group estimator is making better predictions for each city.
-
-# [Web Scraping Demo: Using Yelp as an example](https://github.com/zijing0926/Web-Scraping)
-I taught graduate students how to web scrape using Yelp as an example:
-* demonstrated the use of web scraping on how to get information from the source page
-* wrote functions to scrape different information neatly
-
-![](/images/yelp.PNG)
 
 # [Tweets Analysis and Visualizations with Twint and Pandas](https://github.com/zijing0926/Tweets-Analysis-with-Twint-and-Pandas)
 * **Web scraped** over 150000 related tweets from Twitter using **Twint** to analyze a Japanese TV Show's popularity
@@ -123,7 +86,41 @@ Tweets by Hour             | Tweets Languages Share
 
 * [Blog posts with technical details](https://medium.com/towards-artificial-intelligence/getting-valuable-insights-and-visualizations-from-tweets-using-python-and-twint-28d9f9eb9128)
 
+# [Image Classification with TensorFlow and Deep Learning Neutral Networks](https://github.com/zijing0926/Image-Classification-with-TensorFlow-and-Deep-Learning)
+This project uses **TensorFlow** and **Deep Learning models** to train and classify over 100,000 images into ten classes. Throughout the project, different models are presented to make better predictions step by step:
+* treated image inputs as tensors and defined a delta function calculating the difference between the RGB components, and classify the image to the class with the smallest RGB difference;
+* generated a typical image that minimizes the RGB difference to all training images for each class using gradient descent, and only compared images in the test set to typical images for each class;
+* customized a **logistic regression model** to make multi-class classifications using softmax model;
+* built a multi-layer **fully-connected neural network** that takes the pixel values as input and yields a class prediction as output;
+* built a neural network with two **convolutional layers**, two fully-connected layers with AdamOptimizer;
+* loaded a pre-trained **interception network model**, transformed all train and test images into latent vectors, and made predictions a fully-connected neural network model based on the latent vectors.
 
+# [Time Series Analysis: Predicting Temperature in Different Cities](https://github.com/zijing0926/Time-Series-Analysis-Predicting-Temperature)
+This project read historical temperature for each city from a txt file, and used two models to predict the temperature using **time series** techniques:
+* built a group-by estimator that takes an **estimator factory**. The estimator factory is a collection of estimators for each city. In this case, each city's estimator is only fitting into its data and make corresponding predictions. The first model uses **Random Forest** models to predict each city's temperature. 
+* used is a **Fourier model** that captures the seasonal features. Using month and hour, the group estimator is making better predictions for each city.
+
+# [New York Elite Social Network](https://github.com/zijing0926/New-York-Social-Graph)
+* **Web scraped** over 100,000 photo captions from [New York Social Diary](https://web.archive.org/web/20150913112557/http://www.newyorksocialdiary.com/) and extracted names using **Regex** and **spaCy**. 
+* Built New York Elite social network using **Networkx** with the assumption that people in the same picture know each other. 
+* Utilized the New York elite social network to find the most famous socialites, most influential people, and the most tightly coupled pairs.
+
+Most Influential(Degrees)  | Most Influential (PageRank)| Most tightly coupled
+:-------------------------:|:-------------------------: |:-------------------------:
+![](/images/degree.png)    |![](/images/pr.png)         |![](/images/friends.png)
+
+# [Text Analysis on Yelp Reviews](https://github.com/zijing0926/Text-Analysis-on-Yelp-Reviews)
+This project used **NLP** and machine learning models to predict Yelp star ratings based on text reviews:
+* used **Hash Vectorizer** and **TFIDF Vectorizer** including bigrams as the transformer, and used Ridge regression.
+* used **GridSearchCV** to find the best parameters for both the transformer and the estimator. 
+* utilized the Counter Vectorizer to find the 100 most common food bigrams, by calculating p(w_1w_2)/p(w_1) * p(w_2)
+
+# [Web Scraping Demo: Using Yelp as an example](https://github.com/zijing0926/Web-Scraping)
+I taught graduate students how to web scrape using Yelp as an example:
+* demonstrated the use of web scraping on how to get information from the source page
+* wrote functions to scrape different information neatly
+
+![](/images/yelp.PNG)
 
 
 
