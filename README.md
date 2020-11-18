@@ -1,7 +1,7 @@
 # Portfolio
 Zijing's data science project portfolio
 
-* [Resume](https://www.dropbox.com/s/fqxj8abfb089zen/Zijing%20Zhu%20Resume.pdf?dl=0)
+* [Resume](https://www.dropbox.com/s/164m9gd7fm6gaev/Resume_ZijingZhu.pdf?dl=0)
 * [LinkedIn](https://www.linkedin.com/in/zijingzhu/)
 * [Medium](https://medium.com/@zzhu17)
 
